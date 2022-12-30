@@ -1,0 +1,217 @@
+.App {
+	text-align: center;
+}
+.charvai {
+	background-color: #121212;
+	color: white;
+}
+.charvai2 {
+	background-color: #242424;
+	color: white;
+	border-radius: 15px;
+}
+
+.round {
+	width: 60%;
+	border-radius: 15px;
+	border: 3px #118449 solid;
+	padding: 5px 5px 5px 25px;
+	background-color: #121212;
+}
+.round:focus {
+	width: 60%;
+	border-radius: 15px;
+	border: 3px #118449 solid;
+	padding: 5px 5px 5px 25px;
+	background-color: #121212;
+	outline: none;
+}
+.inputbox {
+	border-radius: 15px;
+	border: 3px #118449 solid;
+	background-color: #242424;
+}
+.inputboxcover {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inputbox:focus {
+	border-radius: 15px;
+	border: 3px #118449 solid;
+	background-color: #242424;
+	box-shadow: none;
+}
+
+.inputboxcover .form-group {
+	width: 100%;
+	max-width: 500px;
+}
+
+span {
+	color: #118449;
+}
+
+input[type="checkbox"]:checked {
+	cursor: pointer;
+	background-color: #d7b1d7;
+	color: #118449;
+}
+
+.themeButton {
+	border: none;
+	background-color: #10ff8d;
+	color: black;
+}
+
+.themeButton:focus {
+	outline: none;
+}
+
+.loginButton {
+	width: 100%;
+	max-width: 100px;
+	padding: 0.5rem 0px;
+	border-radius: 25px;
+}
+
+.toggle__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.toggle__button .wrapper {
+	width: 100%;
+	max-width: 300px;
+	height: 50px;
+	padding: 3px;
+	border-radius: 30px;
+	margin-bottom: 1rem;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: black;
+	overflow: hidden;
+}
+
+.toggle__button .wrapper p {
+	margin: 0;
+	z-index: 1;
+	padding: 5px 10px;
+	position: relative;
+	height: 100%;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3 all ease-in-out;
+}
+
+.toggle__button .wrapper p:after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background: transparent;
+	left: 0;
+	top: 0;
+	border-radius: 25px;
+	z-index: -1;
+	transform: translateX(-100%);
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.3 all ease-in-out;
+}
+
+.toggle__button .wrapper p.active:after {
+	background: green;
+	transform: translateX(0);
+	opacity: 1;
+	width: 100%;
+	transition: 0.3 all ease-in-out;
+}
+.logo {
+	height: 80px;
+	width: 200px;
+}
+.logofooter {
+	height: 50px;
+	width: 120px;
+}
+
+@media only screen and (max-width: 594px) {
+	body {
+		font-size: 0.9rem;
+	}
+
+	.round {
+		width: 60%;
+		font-size: 0.9rem;
+		padding: 5px 10px;
+		background-color: #121212;
+	}
+
+	.logo {
+		height: 50px;
+		width: 100px;
+	}
+	.logofooter {
+		height: 50px;
+		width: 80px;
+	}
+
+	.toggle__button .wrapper {
+		height: 40px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	body {
+		font-size: 0.8rem;
+	}
+
+	.round {
+		width: 100%;
+		font-size: 0.8rem;
+		padding: 5px 10px;
+		background-color: #121212;
+		height: 40px;
+	}
+
+	.logo {
+		height: 50px;
+		width: 100px;
+	}
+	.logofooter {
+		height: 30px;
+		width: 50px;
+	}
+	.toggle__button .wrapper {
+		height: 35px;
+	}
+
+	.toggle__button .wrapper p {
+		font-size: 0.7rem;
+	}
+
+	h1 {
+		font-size: 1.2rem;
+	}
+
+	.form-group input {
+		font-size: 0.8rem;
+	}
+	.mobilefooter {
+		font-size: 0.6rem;
+	}
+}
